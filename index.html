@@ -1,34 +1,90 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Stickman Dismount</title>
-    <link rel="shortcut icon" href="style/favicon.ico">
-    <link rel="stylesheet" href="style/style.css">
-	<script src="/adinLoader.js"></script>
-	<script src="UnityLoader.js"></script>
-    <script src="UnityProgress.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "build.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 100%; height: 95%; margin: auto;"></div>
-	  <div class="footer">
-	            <div class="webgl-logo"></div>
-	            <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-	            <div class="title">Stickman Dismount</div>
-	        </div>
-    </div>
-	<script>
-       if (typeof getAdinDomain !== 'undefined') {
-           const bodyTag = document.getElementsByTagName('body')[0];
-
-           let addAdinPreroll = document.createElement('script');
-            addAdinPreroll.src = getAdinDomain;
-            bodyTag.appendChild(addAdinPreroll);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Halaman utama galeriikanhias.biz.id">
+    <title>Galeri Ikan Hias</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
         }
-  </script>
-  </body>
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        .links {
+            margin: 20px 0;
+        }
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            border-radius: 5px;
+        }
+        .links a:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Galeri Ikan Hias</h1>
+        <p>Tempat hiburan dan informasi seputar ikan hias!</p>
+    </header>
+
+    <main>
+        <div class="image-container">
+            <a href="play.html">
+                <img src="homepage.png" alt="Klik untuk bermain Stickman Game">
+            </a>
+        </div>
+
+        <div class="links">
+	    <a href="about.html">About</a>
+            <a href="disclaimer.html">Disclaimer</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="contact-us.html">Contact</a>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 galeriikanhias. Semua hak cipta dilindungi.
+    </footer>
+</body>
 </html>
