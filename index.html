@@ -18,22 +18,20 @@
             background-color: #007BFF;
             color: white;
             padding: 10px 0;
-        }
-        header h1 {
-            margin: 0;
             text-align: center;
         }
         nav {
             background-color: #0056b3;
-            overflow: hidden;
+            text-align: center;
+            padding: 10px 0;
         }
         nav a {
-            float: left;
-            display: block;
+            display: inline-block;
             color: white;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            margin: 0 5px;
         }
         nav a:hover {
             background-color: #003f7f;
@@ -69,10 +67,9 @@
 <body>
     <header>
         <h1>Selamat Datang di Galeri Ikan Hias</h1>
-    <center>
         <p>Tempat hiburan dan informasi seputar ikan hias!</p>
-     </center>
-     <center>
+    </header>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -80,12 +77,10 @@
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="contact-us.html">Contact Us</a>
     </nav>
-    </center>
-    </header>
 
     <main>
         <div class="image-container">
-            <a href="play.html">
+            <a href="play.html" target="_blank">
                 <img src="homepage.png" alt="Klik untuk bermain Stickman Game">
             </a>
         </div>
